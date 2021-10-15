@@ -11,13 +11,13 @@ d3.json(url).then(function (data) {
 function createFeatures(earthquakeData) {
   function styleFunc(feature) {
       return {
-        opacity: 0.7,
+        opacity: 1,
         fillOpacity: 1,
         fillColor: getColor(feature.properties.mag),
         color: "#000000",
         radius: Math.sqrt(feature.properties.mag) * 5,
         stroke: true,
-        weight: 0.4
+        weight: 0.5
       };
     }
     function getColor(x) {
